@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/quiz_question_one_fragment">
+    <fragment
+        android:id="@+id/quiz_question_one_fragment"
+        android:name="com.rsschool.quiz.QuizQuestionOneFragment"
+        android:label="QuizQuestionOneFragment"
+        tools:layout="@layout/fragment_quiz_question_one">
+        <action
+            android:id="@+id/action_quiz_question_one_fragment_to_quiz_question_two_fragment"
+            app:destination="@id/quiz_question_two_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/quiz_question_two_fragment"
+        android:name="com.rsschool.quiz.QuizQuestionTwoFragment"
+        android:label="fragment_quiz_question_two"
+        tools:layout="@layout/fragment_quiz_question_two">
+        <action
+            android:id="@+id/action_quiz_question_two_fragment_to_quizQuestionThreeFragment"
+            app:destination="@id/quiz_question_three_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quiz_question_three_Fragment"
+        android:name="com.rsschool.quiz.QuizQuestionThreeFragment"
+        android:label="fragment_quiz_question_three"
+        tools:layout="@layout/fragment_quiz_question_three">
+        <action
+            android:id="@+id/action_quiz_question_three_Fragment_to_quizeQuestionFourFragment"
+            app:destination="@id/quizeQuestionFourFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizeQuestionFourFragment"
+        android:name="com.rsschool.quiz.QuizQuestionFourFragment"
+        android:label="QuizeQuestionFourFragment"
+        tools:layout="@layout/fragment_quiz_question_four">
+        <action
+            android:id="@+id/action_quizQuestionFourFragment_to_quizQuestionFiveFragment"
+            app:destination="@id/quizQuestionFiveFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizQuestionFiveFragment"
+        android:name="com.rsschool.quiz.QuizQuestionFiveFragment"
+        android:label="fragment_quiz_question_five"
+        tools:layout="@layout/fragment_quiz_question_five">
+        <action
+            android:id="@+id/action_quizQuestionFiveFragment_to_resultFragment"
+            app:destination="@id/resultFragment"
+
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.rsschool.quiz.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result">
+        <action
+            android:id="@+id/action_resultFragment_to_quiz_question_one_fragment"
+            app:destination="@+id/quiz_question_one_fragment"
+            app:popUpTo="@id/quiz_question_one_fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+</navigation>

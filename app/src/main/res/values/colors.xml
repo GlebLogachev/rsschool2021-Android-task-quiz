@@ -17,4 +17,13 @@
     <color name="deep_purple_100">#d1c4e9</color>
     <color name="deep_purple_100_light">#fff7ff</color>
     <color name="deep_purple_100_dark">#a094b7</color>
+    <color name="purple_500">#9c27b0</color>
+    <color name="purple_500_dark">#6a0080</color>
+    <color name="purple_500_light">#d05ce3</color>
+    <color name="lime_500">#cddc39</color>
+    <color name="lime_500_dark">#99aa00</color>
+    <color name="lime_500_light">#ffff6e</color>
+    <color name="brown_300">#a1887f</color>
+    <color name="brown_300_dark">#725b53</color>
+    <color name="brown_300_light">#d3b8ae</color>
 </resources>
